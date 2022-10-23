@@ -214,3 +214,10 @@ local args = {
 }
 game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
 
+local args = {
+[1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Doors:FindFirstChild("Front Doorway").Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+
+local args = {
+[1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Doors:FindFirstChild("Back Doorway").Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
